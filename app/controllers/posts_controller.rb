@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     
     @post = Place.new
     @post["title"] = params["post"]["title"]
-    @post["date"] = params["post"]["date"]
+    #@post["date"] = params["post"]["date"]
     @post["description"] = params["post"]["description"]
     
     @post.save
