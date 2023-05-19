@@ -9,9 +9,9 @@
 
   <% for post in @posts %>
     <li>
-      <a <%= post["title"] %></a>
-      <a <%= post["posted_on"] %></a>
-      <a <%= post["description"] %></a>
+      <p> <%= post["title"] %></p>
+      <p> <%= post["posted_on"] %></p>
+      <p> <%= post["description"] %></p>
     </li>
   <%end%>
 </ul>
@@ -19,5 +19,5 @@
 <p> Show the post details </p>
 
 
-<a href="/posts/new">Add a New Post</a>
+<a href="/posts/new?place_id=<%=@place["id"]%>">Add a New Post</a>
 
