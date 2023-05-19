@@ -5,6 +5,17 @@
 <p><a href="/places"> Back to the list of Place I have Visited</a></p>
 
 
+<ul>
+
+  <% for post in @posts %>
+    <li>
+      <a <%= post["title"] %></a>
+      <a <%= post["posted_on"] %></a>
+      <a <%= post["description"] %></a>
+    </li>
+  <%end%>
+</ul>
+
 <p> Show the post details </p>
 
 
