@@ -1,0 +1,11 @@
+<h1>New Place</h1>
+
+<%= form_with :model => @place do |form| %>
+  <p>
+    <%= form.label "Name of the place" %>
+    <%= form.text_field "Name of the place" %>
+  </p>
+
+    <%= form.submit %>
+  </p>  
+<% end %>
